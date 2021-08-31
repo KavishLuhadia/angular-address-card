@@ -1,0 +1,10 @@
+<div>
+<p> Name : {{userObj.name}}</p>
+<button (click)= toggle() >Expand/Collapse</button>
+<div *ngIf= show>
+<p> Role : {{userObj.designation}}</p>
+<div> 
+    <p *ngIf="userObj.Phone.length">Phone : </p> 
+    <p *ngFor="let phoneNumber of userObj.Phone">{{phoneNumber}}</p>
+ </div>   
+</div>
